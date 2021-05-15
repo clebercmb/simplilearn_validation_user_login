@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="simplilearn_validation_user_login:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>simplilearn_validation_user_login</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="simplilearn_validation_user_login-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="simplilearn_validation_user_login:war exploded" />
+    </root>
+  </artifact>
+</component>
