@@ -14,7 +14,7 @@
     <form action="ValidationLoginServlet"  method="post" style="display: flex; flex-direction: column; align-items: center">
         <br/>
         <label>
-            Login: <input type="email" name="login"/>
+            Email: <input type="email" name="email"/>
         </label>
         <br/>
         <label>
@@ -27,7 +27,7 @@
         <%  if(request.getParameter("register") != null) {%>
             <jsp:useBean id="login"  class="to.Login" scope="request"/>
             <jsp:setProperty name="login" property="*"/>
-            <jsp:forward page="ValidationLoginServlet"/>
+            <jsp:forward page="/ValidationLoginServlet"/>
         <%}%>
     </form>
 </body>

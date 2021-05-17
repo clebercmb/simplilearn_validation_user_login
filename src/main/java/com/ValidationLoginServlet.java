@@ -18,11 +18,13 @@ public class ValidationLoginServlet extends HttpServlet {
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         System.out.println("****ValidationLoginServlet*****");
         Login login = (Login) request.getAttribute("login");
+        String email = request.getParameter("email");
+        System.out.println(">>>ValidationLoginServlet.login="+login);
 
         PrintWriter out = response.getWriter();
 
         out.println("<div>");
-        out.println("<h1>Hello "+ login.getLogin() +" you had a successful login!</h1>");
+        out.println("<h1>Hello "+ email +" you had a successful login!</h1>");
         out.println("</div>");
         System.out.println(">> login="+login);
 
